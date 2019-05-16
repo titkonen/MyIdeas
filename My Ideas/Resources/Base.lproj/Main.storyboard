@@ -337,6 +337,28 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="zlT-dl-vPq">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="140" id="tx5-hU-drW">
+                                        <rect key="frame" x="0.0" y="239" width="414" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tx5-hU-drW" id="8nj-ms-3Hm">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="139.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="(Description goes here)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Ix-Uj-gsp">
+                                                    <rect key="frame" x="20" y="12" width="374" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="g16-nn-TcR" id="xeW-Ln-cXQ"/>
@@ -358,10 +380,12 @@
                     <connections>
                         <outlet property="datePicker" destination="FkP-iy-VAx" id="S1a-gs-xaS"/>
                         <outlet property="datePickerCell" destination="l9M-v7-PUo" id="hbV-3U-37c"/>
+                        <outlet property="descriptionTextView" destination="2Ix-Uj-gsp" id="756-OW-tBx"/>
                         <outlet property="doneBarButton" destination="hPB-5Y-xgT" id="KPO-Mo-H7O"/>
                         <outlet property="dueDateLabel" destination="mjd-f9-3nj" id="Ldo-G5-Ehm"/>
                         <outlet property="shouldRemindSwitch" destination="DjM-gQ-ITD" id="8gN-bD-R4u"/>
                         <outlet property="textField" destination="7l5-HS-Uha" id="6lY-Pc-Nyw"/>
+                        <outlet property="view" destination="2Ix-Uj-gsp" id="Owo-s3-oma"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Te5-Lg-8qD" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -19,6 +19,8 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
   @IBOutlet weak var datePickerCell: UITableViewCell!
   @IBOutlet weak var datePicker: UIDatePicker!
   
+  // 16.5.2019 added DescriptionTextView
+  @IBOutlet weak var descriptionTextView: UITextView!
   
 	// Properties
   weak var delegate: ItemDetailViewControllerDelegate?
